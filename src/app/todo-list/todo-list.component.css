@@ -1,0 +1,21 @@
+.todo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    border-bottom: 1px solid black;
+    margin: 10px;
+}
+
+.todo h4{
+  padding-left: 20px;
+
+}
+
+span img {
+  height: 25px;
+  padding-right: 10px;
+}
+
+.check{
+
+}

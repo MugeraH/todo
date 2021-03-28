@@ -1,0 +1,6 @@
+<div class="container mt-5">
+  <div class="wrapper p-4">
+    <app-todo-list [todos]="todos"></app-todo-list>
+    <app-todo-form (addTodo)="addNewTodo($event)"></app-todo-form>
+  </div>
+</div>

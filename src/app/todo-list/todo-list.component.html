@@ -1,0 +1,5 @@
+<app-todo-item
+  *ngFor="let todo of todos; let id = index"
+  [todo]="todo"
+  (delete)="deleteTodo(id)"
+></app-todo-item>

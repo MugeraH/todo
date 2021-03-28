@@ -1,0 +1,39 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  align-self: flex-end;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin: 10px;
+}
+
+
+
+span img {
+  height: 25px;
+  padding-right: 10px;
+}
+
+
+.is-complete {
+
+  line-height: 1em;
+  position: relative;
+}
+.is-complete::after {
+  border-bottom: 0.125em solid red;
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
