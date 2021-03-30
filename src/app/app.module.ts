@@ -8,6 +8,7 @@ import { TodoComponent } from './todo/todo.component';
 import { TodoFormComponent } from './todo-form/todo-form.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoItemComponent } from './todo-item/todo-item.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { TodoItemComponent } from './todo-item/todo-item.component';
     TodoListComponent,
     TodoItemComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })
