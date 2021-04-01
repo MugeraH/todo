@@ -1,5 +1,15 @@
+<div class="buttons">
+  <button class="btn btn-outline-light" (click)="selectCompleted()">All</button>
+  <button class="btn btn-outline-light" (click)="selectUndone()">
+    Uncompleted
+  </button>
+  <button class="btn btn-outline-light" (click)="selectCompleted()">
+    Completed
+  </button>
+</div>
+
 <app-todo-item
   *ngFor="let todo of todos; let id = index"
   [todo]="todo"
-  (delete)="deleteTodo(id)"
+  (delete)="deleteTodo(todo, id)"
 ></app-todo-item>

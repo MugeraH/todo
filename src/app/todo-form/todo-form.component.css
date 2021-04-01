@@ -4,6 +4,14 @@
 
 .form input {
   height: 50px;
+  border-bottom: 2px solid black;
 }
 
-
+input[type="text"],
+input[type="text"]:focus {
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  outline: rgb(10, 10, 10);
+  border: rgb(10, 10, 10);
+}

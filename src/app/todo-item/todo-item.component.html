@@ -1,12 +1,12 @@
 <div class="todo-list">
   <span class="date ms-l">
-    {{ todo.completeDate | date }}
+    created : {{ todo.createdDate | date }}
   </span>
   <div class="todo">
-    <h4 [ngClass]="setClasses()">{{ todo.name }}</h4>
+    <h4 [ngClass]="setClasses()">{{ todo.title }}</h4>
 
     <div class="icons">
-      <span (click)="setComplete()" class="check" *ngIf="!todo.completed">
+      <span (click)="setComplete()" class="check" *ngIf="!todo.isCompleted">
         <img
           src="../../assets/img/check.png"
           alt=""
@@ -15,7 +15,7 @@
           title="Mark complete"
         />
       </span>
-      <span (click)="setComplete()" class="check" *ngIf="todo.completed">
+      <span (click)="setComplete()" class="check" *ngIf="todo.isCompleted">
         <img
           src="../../assets/img/remove.png"
           alt=""

@@ -16,6 +16,8 @@ span img {
   padding-right: 10px;
 }
 
-.check{
-
+.buttons{
+display: flex;
+justify-content: center;
+gap: 10px;
 }

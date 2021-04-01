@@ -7,8 +7,8 @@
 export class TodoItems {
   constructor(
     public id: number,
-    public name: string,
-    public completed: boolean,
-    public completeDate: Date
+    public title: string,
+    public isCompleted: boolean,
+    public createdDate: Date
   ) {}
 }
